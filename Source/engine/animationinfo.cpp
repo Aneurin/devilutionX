@@ -45,7 +45,7 @@ int AnimationInfo::GetFrameToUseForRendering() const
 	return absoluteAnimationFrame;
 }
 
-void AnimationInfo::SetNewAnimation(uint8_t *pData, int numberOfFrames, int delayLen, AnimationDistributionParams params /*= AnimationDistributionParams::None*/, int numSkippedFrames /*= 0*/, int distributeFramesBeforeFrame /*= 0*/)
+void AnimationInfo::SetNewAnimation(byte *pData, int numberOfFrames, int delayLen, AnimationDistributionParams params /*= AnimationDistributionParams::None*/, int numSkippedFrames /*= 0*/, int distributeFramesBeforeFrame /*= 0*/)
 {
 	this->pData = pData;
 	NumberOfFrames = numberOfFrames;
